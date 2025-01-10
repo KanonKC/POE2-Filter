@@ -1,7 +1,6 @@
 #Edit form Neversink
 #Edit from oMySelf
 
-
 #Show 
 
 #BaseType "Neural Catalyst"
@@ -15,29 +14,43 @@
 #DisableDropSound True
 #CustomAlertSound "sound3.mp3"
 
-Hide
-BaseType "Catalyst"
-Class "Currency"
+
+    
+Show
+    BaseType "Primed Quiver" Visceral Quiver
+    Rarity Rare
+    SetTextColor 0 240 190
+    SetBorderColor 0 240 190
+    #SetBackgroundColor 255 255 255 # White background
+    #Class Bow
+    SetFontSize 40
+    
+Show
+    BaseType "Sapphire Ring" "Stellar Amulet" "Heavy Belt"
+    Rarity Normal
+    SetTextColor 153 51 255
+    SetBorderColor 153 51 255
+    #SetBackgroundColor 255 255 255 # White background
+    #Class Bow
+    SetFontSize 40
 
 Show
-BaseType "Primed Quiver" Visceral Quiver
-Rarity Rare
-SetTextColor 0 240 190
-SetBorderColor 0 240 190
-#SetBackgroundColor 255 255 255 # White background
-#Class Bow
-SetFontSize 40
+    Rarity Normal
+    BaseType "Attuned Wand" "Siphoning Wand"
+    ItemLevel >= "70"
+    SetFontSize 45
+    SetTextColor 51 255 51
+    SetBorderColor 51 255 51
+    PlayEffect Green
+    MinimapIcon 1 Green Circle
+    DisableDropSound True
+    CustomAlertSound "wand-drop.mp3" 200
 
 Show
-BaseType "Sapphire Ring" "Stellar Amulet" "Heavy Belt"
-Rarity Normal
-SetTextColor 153 51 255
-SetBorderColor 153 51 255
-#SetBackgroundColor 255 255 255 # White background
-#Class Bow
-SetFontSize 40
-
-
+    Rarity Rare
+    Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus" "Belt"
+    ItemLevel >= 65
+    
 Show
 Class Boots
 ItemLevel >= "82"
@@ -67,10 +80,6 @@ SetFontSize 40
 #PlayEffect Cyan
 #CustomAlertSound "sound5.mp3"
 DisableDropSound True
-
-
-
-
 
 
 Show 
@@ -253,9 +262,23 @@ DisableDropSound True
 CustomAlertSound "sound1.mp3"
 
 ## Divine Orb Style
+
+Show
+    Class "Currency"
+    BaseType "Exalted Orb"
+    SetFontSize 45
+    SetTextColor 0 0 255 255
+    SetBorderColor 0 0 255 255
+    SetBackgroundColor 255 255 255 255
+    PlayAlertSound 6 300
+    PlayEffect Blue
+    MinimapIcon 0 Blue Circle
+    DisableDropSound True
+    CustomAlertSound "exalted-drop.mp3" 200
+
 Show
 Class "Currency"
-BaseType "Gemcutter's Prism" "Exalted Orb" "Chaos Orb" "Exotic" "Simulacrum Splinter" "Orb of Chance" "Greater Essence of"
+BaseType "Gemcutter's Prism" "Chaos Orb" "Exotic" "Simulacrum Splinter" "Orb of Chance" "Greater Essence of" "Glassblower's Bauble" "Armourer's Scrap"
 SetFontSize 45
 SetTextColor 0 0 255 255
 SetBorderColor 0 0 255 255
@@ -268,8 +291,21 @@ CustomAlertSound "sound5.mp3"
 
 # Currency Tier A: Gemcutter, Annullment
 Show
+    Class "Currency"
+    BaseType "Vaal Orb"
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 0 0 255 200
+    #PlayAlertSound 1 300
+    PlayEffect Blue
+    MinimapIcon 1 Blue Circle
+    SetFontSize 40
+    DisableDropSound True
+    CustomAlertSound "vaal-orb.mp3"
+
+Show
 Class "Currency"
-BaseType "Orb of Alchemy"  "Orb of Annulment" "Chance Shard" "Vaal Orb"
+BaseType "Orb of Alchemy"  "Orb of Annulment" "Chance Shard"
 SetTextColor 255 255 255 255
 SetBorderColor 255 255 255 255
 SetBackgroundColor 0 0 255 200
@@ -283,7 +319,7 @@ CustomAlertSound "sound3.mp3"
 # Currency Tier B: Vaal, Chaos, Exalt, Exotic
 Show
 Class "Currency"
-BaseType "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Essence of" "Lesser Jeweller's Orb" "Armourer's Scrap" "Blacksmith's Whetstone"
+BaseType "Regal Orb" "Artificer's Orb" "Essence of" "Lesser Jeweller's Orb" "Blacksmith's Whetstone" "Adaptive Catalyst"
 SetTextColor 255 255 255 255
 SetBorderColor 255 255 255 255
 SetBackgroundColor 0 0 255 200
@@ -293,6 +329,10 @@ SetBackgroundColor 0 0 255 200
 SetFontSize 40
 DisableDropSound True
 CustomAlertSound "sound2.mp3"
+
+Hide
+    BaseType "Catalyst"
+    Class "Currency"
 
 
 Show
@@ -309,7 +349,7 @@ SetFontSize 34
 CustomAlertSound "sound4.mp3"
 
 # Currency Tier C:
-Hide
+Show
 Class "Currency"
 BaseType  "Orb of Augmentation" "Orb of Transmutation" "Arcanist's Etcher"
 SetTextColor 0 0 255
@@ -397,7 +437,7 @@ CustomAlertSound "sound8.mp3"
 
 
 Show
-BaseType "Waystone (Tier 12)" "Waystone (Tier 13)" "Waystone (Tier 14)" 
+BaseType "Waystone (Tier 11)" "Waystone (Tier 12)" "Waystone (Tier 13)" "Waystone (Tier 14)" 
 Rarity <= Rare
 SetTextColor 255 0 255
 SetBorderColor 255 0 255
@@ -470,7 +510,7 @@ SetFontSize 40
 ### OPTIONAL RULE: Hide random bases
 # REMOVE THE BASES YOU --DO-- WANT TO SEE BEFORE SETTING TO HIDE
 
-    Hide
+Hide
     Rarity <= Magic
     Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus" "Belt"
     AreaLevel >= 65
@@ -490,5 +530,5 @@ Show
     Class  "Helmet" "Boots" "Gloves" "Quiver" "Bow"
 
 Hide
-    Rarity <= Rare
-    Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus"
+        Rarity <= Rare
+        Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus"
