@@ -246,7 +246,7 @@ PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
 DisableDropSound True
-CustomAlertSound "divine-drop.mp3" 200
+CustomAlertSound "divine-drop.mp3" 300
 
 Show
 Class "Currency"
