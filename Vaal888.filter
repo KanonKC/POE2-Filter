@@ -49,7 +49,7 @@ Show
 Show
     Rarity Rare
     Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus" "Belt"
-    ItemLevel >= 65
+    ItemLevel >= 70
     
 Show
 Class Boots
