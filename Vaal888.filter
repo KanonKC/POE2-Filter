@@ -35,7 +35,7 @@ Show
     SetFontSize 40
 
 Show
-    Rarity Normal
+    # Rarity Normal
     BaseType "Attuned Wand" "Siphoning Wand"
     ItemLevel >= "70"
     SetFontSize 45
@@ -362,7 +362,7 @@ CustomAlertSound "sound4.mp3"
 
 Show
 Class "Currency"
-BaseType "Breach Splinter" " Artifact" 
+BaseType "Breach Splinter"
 SetTextColor 0 0 255
 SetBorderColor 0 0 255
 SetBackgroundColor 102 178 255 
@@ -370,6 +370,10 @@ MinimapIcon 2 Purple Circle
 SetFontSize 34
 DisableDropSound True
 CustomAlertSound "sound4.mp3"
+
+Hide
+Class "Currency"
+BaseType "Artifact"
 
 Hide
 Class "Currency"
