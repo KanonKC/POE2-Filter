@@ -12,7 +12,7 @@
 #MinimapIcon 1 Blue Circle
 #SetFontSize 45
 #DisableDropSound True
-#CustomAlertSound "sound3.mp3"
+#CustomAlertSound "general/sound3.mp3"
 
 
     
@@ -33,6 +33,7 @@ Show
     #SetBackgroundColor 255 255 255 # White background
     #Class Bow
     SetFontSize 40
+    CustomAlertSound "general/chance-item.mp3" 200
 
 Show
     # Rarity Normal
@@ -44,7 +45,7 @@ Show
     PlayEffect Green
     MinimapIcon 1 Green Circle
     DisableDropSound True
-    CustomAlertSound "wand-drop.mp3" 200
+    CustomAlertSound "general/wand-drop.mp3" 200
 
 Show
     Rarity Rare
@@ -78,14 +79,14 @@ SetBorderColor 0 240 190
 SetFontSize 40
 #MinimapIcon 2 Cyan Triangle
 #PlayEffect Cyan
-#CustomAlertSound "sound5.mp3"
+#CustomAlertSound "general/sound5.mp3"
 DisableDropSound True
 
 
 Show 
 
 BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
-ItemLevel >= "20"
+ItemLevel >= 20
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -94,13 +95,13 @@ PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
 DisableDropSound True
-CustomAlertSound "sound1.mp3"
+CustomAlertSound "general/uncut-skill-gem-20.mp3"
 
 
 Show 
 
 BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
-ItemLevel >= "19"
+ItemLevel >= 19
 SetTextColor 255 255 255 255
 SetBorderColor 255 255 255 255
 SetBackgroundColor 0 0 255
@@ -109,7 +110,7 @@ PlayEffect Blue
 MinimapIcon 1 Blue Circle
 SetFontSize 45
 DisableDropSound True
-CustomAlertSound "sound5.mp3"
+CustomAlertSound "general/sound5.mp3"
 
 
 
@@ -231,7 +232,7 @@ PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
 DisableDropSound True
-CustomAlertSound "sound5.mp3"
+CustomAlertSound "general/sound5.mp3"
 
 ## Divine Orb Style
 
@@ -246,20 +247,33 @@ PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
 DisableDropSound True
-CustomAlertSound "divine-orb.mp3" 300
+CustomAlertSound "general/divine-orb.mp3" 300
 
 Show
-Class "Currency"
-BaseType "Mirror" "Perfect Jeweller's Orb"  "Greater Jeweller's Orb" 
-SetFontSize 45
-SetTextColor 255 0 0 255
-SetBorderColor 255 0 0 255
-SetBackgroundColor 255 255 255 255
-PlayAlertSound 6 300
-PlayEffect Red
-MinimapIcon 0 Red Star
-DisableDropSound True
-CustomAlertSound "sound1.mp3"
+    Class "Currency"
+    BaseType "Perfect Jeweller's Orb"
+    SetFontSize 45
+    SetTextColor 255 0 0 255
+    SetBorderColor 255 0 0 255
+    SetBackgroundColor 255 255 255 255
+    PlayAlertSound 6 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+    DisableDropSound True
+    CustomAlertSound "general/perfect-jeweller-orb.mp3"
+
+Show
+    Class "Currency"
+    BaseType "Mirror" "Greater Jeweller's Orb" 
+    SetFontSize 45
+    SetTextColor 255 0 0 255
+    SetBorderColor 255 0 0 255
+    SetBackgroundColor 255 255 255 255
+    PlayAlertSound 6 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+    DisableDropSound True
+    CustomAlertSound "general/sound1.mp3"
 
 ## Divine Orb Style
 
@@ -274,7 +288,7 @@ Show
     PlayEffect Blue
     MinimapIcon 0 Blue Circle
     DisableDropSound True
-    CustomAlertSound "exalted-orb.mp3" 200
+    CustomAlertSound "general/exalted-orb.mp3" 200
 
 Show
 Class "Currency"
@@ -287,7 +301,7 @@ PlayAlertSound 6 300
 PlayEffect Blue
 MinimapIcon 0 Blue Circle
 DisableDropSound True
-CustomAlertSound "sound5.mp3"
+CustomAlertSound "general/sound5.mp3"
 
 # Currency Tier A: Gemcutter, Annullment
 Show
@@ -301,7 +315,7 @@ Show
     MinimapIcon 1 Blue Circle
     SetFontSize 40
     DisableDropSound True
-    CustomAlertSound "vaal-orb.mp3"
+    CustomAlertSound "general/vaal-orb.mp3"
 
 Show
 Class "Currency"
@@ -314,7 +328,7 @@ PlayEffect Blue
 MinimapIcon 1 Blue Circle
 SetFontSize 40
 DisableDropSound True
-CustomAlertSound "sound3.mp3"
+CustomAlertSound "general/sound3.mp3"
 
 # Currency Tier B: Vaal, Chaos, Exalt, Exotic
 Show
@@ -328,7 +342,7 @@ SetBackgroundColor 0 0 255 200
 #MinimapIcon 1 White Circle
 SetFontSize 40
 DisableDropSound True
-CustomAlertSound "sound2.mp3"
+CustomAlertSound "general/sound2.mp3"
 
 Hide
     BaseType "Catalyst"
@@ -346,7 +360,7 @@ SetBackgroundColor 102 178 255 220
 #MinimapIcon 1 White Circle
 DisableDropSound True
 SetFontSize 34
-CustomAlertSound "sound4.mp3"
+CustomAlertSound "general/sound4.mp3"
 
 # Currency Tier C:
 Show
@@ -358,7 +372,7 @@ SetBackgroundColor 255 255 255 200
 #MinimapIcon 2 Grey Circle
 DisableDropSound True
 SetFontSize 30
-CustomAlertSound "sound4.mp3"
+CustomAlertSound "general/sound4.mp3"
 
 Show
 Class "Currency"
@@ -369,7 +383,7 @@ SetBackgroundColor 102 178 255
 MinimapIcon 2 Purple Circle
 SetFontSize 34
 DisableDropSound True
-CustomAlertSound "sound4.mp3"
+CustomAlertSound "general/sound4.mp3"
 
 Hide
 Class "Currency"
@@ -408,7 +422,7 @@ PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
 DisableDropSound True
-CustomAlertSound "sound1.mp3"
+CustomAlertSound "general/sound1.mp3"
 
 
 # Fragments
@@ -422,7 +436,7 @@ SetBackgroundColor 65 20 80
 #MinimapIcon 1 White Square
 SetFontSize 40
 DisableDropSound True
-#CustomAlertSound "sound5.mp3"
+#CustomAlertSound "general/sound5.mp3"
 
 
 Show
@@ -436,7 +450,7 @@ PlayEffect Pink
 MinimapIcon 1 Pink Square
 SetFontSize 45
 DisableDropSound True
-CustomAlertSound "sound8.mp3"
+CustomAlertSound "general/sound8.mp3"
 
 
 
@@ -450,7 +464,7 @@ SetBorderColor 255 0 255
 #MinimapIcon 1 Pink Square
 SetFontSize 40
 DisableDropSound True
-#CustomAlertSound "sound7.mp3"
+#CustomAlertSound "general/sound7.mp3"
 
 
 Hide
@@ -467,7 +481,7 @@ SetBorderColor 255 0 255
 #MinimapIcon 1 Pink Square
 SetFontSize 40
 DisableDropSound True
-CustomAlertSound "sound7.mp3"
+CustomAlertSound "general/sound7.mp3"
 
 #--------------------------
 # Value Rares
@@ -534,5 +548,5 @@ Show
     Class  "Helmet" "Boots" "Gloves" "Quiver" "Bow"
 
 Hide
-        Rarity <= Rare
-        Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus"
+    Rarity <= Rare
+    Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre" "Focus"
