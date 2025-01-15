@@ -246,7 +246,7 @@ PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
 DisableDropSound True
-CustomAlertSound "divine-drop.mp3" 300
+CustomAlertSound "divine-orb.mp3" 300
 
 Show
 Class "Currency"
@@ -274,7 +274,7 @@ Show
     PlayEffect Blue
     MinimapIcon 0 Blue Circle
     DisableDropSound True
-    CustomAlertSound "exalted-drop.mp3" 200
+    CustomAlertSound "exalted-orb.mp3" 200
 
 Show
 Class "Currency"
